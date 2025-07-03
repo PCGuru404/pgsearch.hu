@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  background-color: #0d0d0d;
+  color: #00ff00;
+  font-family: 'Orbitron', monospace, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#logo {
+  width: 272px;
+  filter: drop-shadow(0 0 10px #00ff00);
+  animation: pulse 3s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    filter: drop-shadow(0 0 5px #00ff00);
+  }
+  100% {
+    filter: drop-shadow(0 0 20px #00ff00);
+  }
+}
+
+form {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+#searchInput {
+  width: 300px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #00ff00;
+  background-color: #111;
+  color: #00ff00;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: #00ff00;
+  color: #000;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00ff00;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background-color: #00cc00;
+  box-shadow: 0 0 15px #00ff00;
+}
+
+#results {
+  margin-top: 40px;
+  width: 80%;
+  max-width: 800px;
+}
+
+.result {
+  background-color: #111;
+  border-left: 4px solid #00ff00;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.result a {
+  color: #00ff00;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.result p {
+  color: #ccc;
+}
