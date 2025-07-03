@@ -1,0 +1,2 @@
+# pgsearch.hu
+PGSearch keresőmotor
